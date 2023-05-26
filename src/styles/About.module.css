@@ -10,7 +10,7 @@
 .aboutHeader h1 {
     font-family: "Lucidity", "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-size: clamp(5rem, 9.5vw, 10rem);
+    font-size: clamp(5rem, 9.5vw, 8rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
     text-align: center;
@@ -28,8 +28,8 @@
 
 .container {
     position: absolute;
-    padding: 1.5vw;
-    border-radius: 70px;
+    padding: 2rem;
+    border-radius: 40px;
     background-color: #d6e6ff;
     display: flex;
     flex-direction: column;
