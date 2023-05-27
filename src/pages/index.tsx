@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Products from "@/components/Products";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 export default function Home() {
   return (
