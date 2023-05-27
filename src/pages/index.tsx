@@ -3,12 +3,13 @@ import Header from "@/components/Header";
 import About from "@/components/About";
 import Products from "@/components/Products";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Contactform from "@/components/Contactform";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Parallax pages={3}>
+      <Parallax pages={4}>
         <ParallaxLayer speed={0.1} offset={0}>
           <div id="home">
             <Hero />
@@ -23,6 +24,9 @@ export default function Home() {
           <div id="product">
             <Products />
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer speed={0.175} offset={3}>
+          <Contactform />
         </ParallaxLayer>
       </Parallax>
     </>

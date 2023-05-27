@@ -27,33 +27,33 @@ function Products() {
         </header>
         <Grid.Container gap={2} justify="center">
         {list.map((item, index) => (
-            <Grid xs={12} sm={3.5} key={index}>
-            <Card isPressable isHoverable onPress={() => setVisible(true)}>
-                <Card.Body css={{p: 0}}>
-                <Card.Image
-                    src={"https://lh3.googleusercontent.com/" + item.img}
-                    objectFit="cover"
-                    width="100%"
-                    height={600}
-                    alt={item.title}
-                />
-                </Card.Body>
-                <Card.Footer css={{ justifyItems: "flex-start" }}>
-                <Row wrap="wrap" justify="space-between" align="center">
-                    <Text b className={styles.itemTitle}>{item.title}</Text>
-                    <Text className={styles.itemPrice}>
-                    {item.price}
-                    </Text>
-                </Row>
-                </Card.Footer>
-            </Card>
+            <Grid xs={4} key={index} className={styles.cardGrid}>
+                <Card isPressable isHoverable onPress={() => setVisible(true)}>
+                    <Card.Body css={{p: 0}}>
+                    <Card.Image
+                        src={"https://lh3.googleusercontent.com/" + item.img}
+                        objectFit="cover"
+                        width="100%"
+                        height="100%"
+                        alt={item.title}
+                    />
+                    </Card.Body>
+                    <Card.Footer css={{ justifyItems: "flex-start" }}>
+                    <Row wrap="wrap" justify="space-between" align="center">
+                        <Text b className={styles.itemTitle}>{item.title}</Text>
+                        <Text className={styles.itemPrice}>
+                        {item.price}
+                        </Text>
+                    </Row>
+                    </Card.Footer>
+                </Card>
             </Grid>
         ))}
         </Grid.Container>
         {list.map((item, index) => (
         <Modal
             scroll
-            width="1000px"
+            width="900px"
             aria-labelledby={item.title}
             aria-describedby={item.itemInfo}
             {...bindings}
