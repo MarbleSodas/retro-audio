@@ -83,7 +83,7 @@ function Products() {
                     googleCalendarId: '69652ca28d3ef7fe5f2ede28fc33ed6ad01ee0673a19e13e13853fdb1ab2b843@group.calendar.google.com',
                     className: 'gcal-event', // Optional: an additional class for styling events
                 }}
-                googleCalendarApiKey="AIzaSyAn4QyXQKRLUgsa9sGj5MghSrd36uTNGmA"
+                googleCalendarApiKey={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
             />
             </Modal.Body>
             <Modal.Footer>
