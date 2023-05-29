@@ -4,6 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function Contactform() {
   const [state, handleSubmit] = useForm("xoqzzpgj");
   if (state.succeeded) {
+    //change the message and styling
       return <p>Thanks for joining!</p>;
   }
   return (
@@ -37,6 +38,7 @@ function Contactform() {
           field="message"
           errors={state.errors}
         />
+        {/* fix button visibility */}
         <button type="submit" className={styles.button} disabled={state.submitting}>
           Submit
         </button>
