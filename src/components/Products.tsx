@@ -27,12 +27,12 @@ function Products() {
         </header>
         <Grid.Container gap={2} justify="center">
         {list.map((item, index) => (
-            <Grid xs={4} key={index} className={styles.cardGrid}>
+            <Grid sm={3.5} key={index} className={styles.cardGrid}>
                 <Card isPressable isHoverable onPress={() => setVisible(true)}>
                     <Card.Body css={{p: 0}}>
                     <Card.Image
                         src={"https://lh3.googleusercontent.com/" + item.img}
-                        objectFit="cover"
+                        objectFit="scale-down"
                         width="100%"
                         height="100%"
                         alt={item.title}

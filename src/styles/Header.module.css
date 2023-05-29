@@ -39,6 +39,7 @@
   }
   
   .logo {
+    display: flex;
     width: auto;
     height: 3.5vw;
   }
