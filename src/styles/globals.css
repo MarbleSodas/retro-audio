@@ -119,6 +119,6 @@ body {
   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: clamp(5rem, 9.5vw, 8rem);
   color: var(--primaryTextColor);
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   text-align: center;
 }

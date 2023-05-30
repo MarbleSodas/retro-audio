@@ -26,7 +26,9 @@ export default function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer speed={0.175} offset={3}>
-          <Contactform />
+          <div id="contactform">
+            <Contactform />
+          </div>
         </ParallaxLayer>
       </Parallax>
     </>

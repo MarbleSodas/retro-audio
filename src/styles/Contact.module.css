@@ -40,8 +40,8 @@
   
   .button {
     border-color: transparent;
-    background-color: #0f7e22;
-    color: #005c0d;
+    background-color: #d6e6ff;
+    color: #004708;
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 18px;
@@ -49,5 +49,5 @@
   }
   
   .button:hover {
-    background-color: #7aee6a;
+    background-color: #75a2eb;
   }
