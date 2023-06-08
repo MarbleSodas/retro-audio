@@ -8,8 +8,7 @@
 }
 
 .aboutHeader h1 {
-    font-family: "Lucidity", "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--fontMain);
     font-size: clamp(5rem, 9.5vw, 8rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
@@ -17,20 +16,16 @@
   }
 
 .aboutHeader p {
-    font-family: "Lucidity", "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--fontLucidity);
     font-size: clamp(2rem, 2.5vw, 4.5rem);
     color: var(--primaryTextColor);
-    width: 75vw;
+    width: 70vw;
     height: auto;
     text-align: center;
 }
 
 .container {
     position: absolute;
-    padding: 2rem;
-    border-radius: 40px;
-    background-color: #d6e6ff;
     display: flex;
     flex-direction: column;
     justify-content: center;
