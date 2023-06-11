@@ -34,7 +34,7 @@ export default function Home() {
                 <li> <a onClick={() => parallax.current.scrollTo(1)}>About</a> </li>
                 <li> <a onClick={() => parallax.current.scrollTo(1.9)}>Products</a> </li>
                 <li> <a onClick={() => parallax.current.scrollTo(3)}>Contact</a> </li>
-                <li> <a>Support</a> </li>
+                <li> <a href="/support" style={{textDecoration: "none"}}>Support</a> </li>
               </ul>
               </label>
             </div>
@@ -45,16 +45,16 @@ export default function Home() {
         <header className={styles.header}>
         <nav className={styles.nav}>
           <div className={styles.align}>
-          <a onClick={() => parallax.current.scrollTo(0)}><Image src={Logo} alt="Logo" className={styles.logo}/></a>
-          <a onClick={() => parallax.current.scrollTo(0)}>Retro Audio</a>
+            <a onClick={() => parallax.current.scrollTo(0)}><Image src={Logo} alt="Logo" className={styles.logo}/></a>
+            <a onClick={() => parallax.current.scrollTo(0)}>Retro Audio</a>
           </div>
           <div>
               <a onClick={() => parallax.current.scrollTo(1)}>About</a>
               <a onClick={() => parallax.current.scrollTo(1.9)}>Products</a>
               <a onClick={() => parallax.current.scrollTo(3)}>Contact</a>
           </div>
-          <div>
-          <a>Support</a>
+          <div className="removeUnderline">
+          <a href="/support" style={{textDecoration: "none"}}>Support</a>
           </div>
         </nav>
       </header>

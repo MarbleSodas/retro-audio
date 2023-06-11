@@ -3,15 +3,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(2,15,37);
-    background: linear-gradient(180deg, rgba(2,15,37,1) 0%, rgba(4,26,64,0.9752275910364145) 71%, rgba(4,26,64,0) 100%);
+    background: rgb(4,26,64);
+    background: linear-gradient(180deg, rgba(4,26,64,0.8) 0%, rgba(4,26,64,0.8) 100%);
     color: var(--primaryTextColor);
-    padding-top: .1vw;
-    padding-bottom: .75vw;
     padding-left: .85vw;
     padding-right: .85vw;
     text-align: center;
-    font-size: clamp(1.3rem, 3vw, 2.7rem);
+    font-size: clamp(1.3rem, 4vw, 3.5rem);
     z-index: 1;
   }
   .nav {
@@ -71,6 +69,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    text-decoration: none;
     color: var(--primaryTextColor);
   }
 
@@ -82,12 +81,12 @@
     background: rgb(2,15,37);
     background: linear-gradient(180deg, rgba(2,15,37,1) 0%, rgba(4,26,64,0.9752275910364145) 71%, rgba(4,26,64,0) 100%);
     color: var(--primaryTextColor);
-    padding-top: .1vw;
     padding-bottom: .75vw;
     padding-left: .85vw;
     padding-right: .85vw;
     text-align: center;
     font-size: clamp(2rem, 3vw, 2.7rem);
+    text-decoration: none;
     z-index: 1;
   }
 
