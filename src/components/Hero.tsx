@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Phone from './images/PhoneTransparent.png';
-import Circle from './images/Circle.png';
+import moon from './images/moon.png';
 
 function Hero() {
 
@@ -22,7 +22,7 @@ function Hero() {
       </header>
       <div className="cover">
         <Image alt="phone" src={Phone} className="phone"/>
-        <Image alt='circle' src={Circle} className="circle"/>
+        <Image alt='moon' src={moon} className="circle"/>
       </div>
     </div>
   );

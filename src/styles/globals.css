@@ -225,6 +225,14 @@ body::-webkit-scrollbar {
     top: 0;
     z-index: -2;
   }
+  
+  .backgroundimgStarsSupport {
+    width: auto;
+    height: 600vh;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+  }
 
   .phone {
     justify-self: center;

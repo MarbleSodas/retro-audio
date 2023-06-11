@@ -10,7 +10,7 @@ function About() {
                     Our Story
                 </h1>
                 <p>
-                  A couple of weeks before our wedding, my wife and I were scrolling through looking for guestbooks last minute.
+                  A couple of weeks before our wedding, my wife and I were scrolling through looking for guestbooks.
                   We wanted something unique but not pieces of wood we would put in a plastic display. During our search we found out about audio guestbooks.
                   We knew we had to have one but our wedding, but we couldn't find any that would ship in time.
                   So we decided to make our own and now we want to share it with you!

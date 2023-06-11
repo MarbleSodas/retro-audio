@@ -5,6 +5,9 @@ import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from "react";
 import Stars from "@/components/images/stars.png";
 import Support from "@/components/Support";
+import Contactform from '@/components/Contactform';
+import OnandOff from '@/components/OnandOff';
+import Testing from '@/components/Testing';
 
 export default function support() {
     const parallax = useRef<IParallax>(null!);
@@ -32,12 +35,21 @@ export default function support() {
           </nav>
         </header>
         </div>
-        <Parallax pages={4} ref={parallax}>
-            <ParallaxLayer speed={0.075} offset={0}>
-                <Image src={Stars} alt="backStars" className="backgroundimgStars"/>
+        <Parallax pages={6} ref={parallax}>
+            <ParallaxLayer speed={0.015} offset={0}>
+                <Image src={Stars} alt="backStars" className="backgroundimgStarsSupport"/>
             </ParallaxLayer>
-            <ParallaxLayer speed={0.075} offset={0}>
+            <ParallaxLayer speed={0.175} offset={0}>
                 <Support/>
+            </ParallaxLayer>
+            <ParallaxLayer speed={0.275} offset={2}>
+                <OnandOff/>
+            </ParallaxLayer>
+            <ParallaxLayer speed={0.275} offset={3}>
+                <Testing/>
+            </ParallaxLayer>
+            <ParallaxLayer speed={0.275} offset={5}>
+                <Contactform/>
             </ParallaxLayer>
         </Parallax>
       </>

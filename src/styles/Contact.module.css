@@ -15,7 +15,25 @@
     padding-bottom: 100px;
     z-index: 0;
   }
+
+  .contactForm p {
+    font-family: var(--fontLucidity);
+    font-size: clamp(2rem, 1.5vw, 4rem);
+    color: var(--primaryTextColor);
+    width: 70vw;
+    height: auto;
+    text-align: center;
+  }
   
+  .contactForm a {
+    font-family: var(--fontLucidity);
+    font-size: clamp(1.5rem, 1.5vw, 4rem);
+    color: var(--primaryTextColor);
+    width: 70vw;
+    height: auto;
+    text-align: center;
+    padding-bottom: 5px;
+  }
   
   .input {
     align-items: center;
@@ -35,7 +53,7 @@
     margin-bottom: 1rem;
     font-size: 18px;
     width: 75vw;
-    height: 15vw;
+    height: 20vh;
     max-inline-size: 1000px;
   }
   
@@ -64,4 +82,14 @@
       height: 50vw;
       max-inline-size: 1000px;
     }
+  }
+
+  .submitMessage {
+    font-family: var(--fontLucidity);
+    font-size: clamp(5rem, 5vw, 8rem);
+    color: var(--primaryTextColor);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 50px;
+    text-align: center;
   }

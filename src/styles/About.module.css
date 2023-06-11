@@ -17,7 +17,7 @@
 
 .aboutHeader p {
     font-family: var(--fontLucidity);
-    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    font-size: clamp(2rem, 2vw, 4.5rem);
     color: var(--primaryTextColor);
     width: 70vw;
     height: auto;
@@ -30,4 +30,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header h1 {
+    font-family: var(--fontLucidity);
+    font-size: clamp(5rem, 11vw, 12rem);
+    color: var(--primaryTextColor);
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .header h2 {
+    font-family: var(--fontLucidity);
+    font-size: clamp(5rem, 5vw, 8rem);
+    color: var(--primaryTextColor);
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+.header p {
+    font-family: var(--fontLucidity);
+    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    color: var(--primaryTextColor);
+    width: 70vw;
+    height: auto;
+    text-align: center;
+}
+
+.header a {
+    font-family: var(--fontLucidity);
+    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    color: var(--primaryTextColor);
+    width: 70vw;
+    height: auto;
+    text-align: center;
+    padding-bottom: 5px;
 }
