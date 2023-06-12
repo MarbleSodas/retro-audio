@@ -10,7 +10,7 @@ function Support() {
                     Support
                 </h1>
                 <p>
-                  Learn how to operate your Retro Audio Guestbook!
+                  How to operate your Retro Audio Guestbook!
                 </p>
             </div>
         </header>

@@ -8,6 +8,7 @@ import Support from "@/components/Support";
 import Contactform from '@/components/Contactform';
 import OnandOff from '@/components/OnandOff';
 import Testing from '@/components/Testing';
+import Record from '@/components/Record';
 
 export default function support() {
     const parallax = useRef<IParallax>(null!);
@@ -41,6 +42,9 @@ export default function support() {
             </ParallaxLayer>
             <ParallaxLayer speed={0.175} offset={0}>
                 <Support/>
+            </ParallaxLayer>
+            <ParallaxLayer speed={0.275} offset={1}>
+                <Record/>
             </ParallaxLayer>
             <ParallaxLayer speed={0.275} offset={2}>
                 <OnandOff/>
