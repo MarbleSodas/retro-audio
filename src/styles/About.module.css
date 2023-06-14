@@ -8,8 +8,8 @@
 }
 
 .aboutHeader h1 {
-    font-family: var(--fontMain);
-    font-size: clamp(5rem, 9.5vw, 8rem);
+    font-family: var(--fontLucidity);
+    font-size: clamp(5rem, 8vw, 6rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
     text-align: center;

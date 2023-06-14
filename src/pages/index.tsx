@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Products from "@/components/Products";
+import Infocards from "@/components/Infocards";
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import Contactform from "@/components/Contactform";
 import Image from 'next/image';
@@ -50,8 +51,8 @@ export default function Home() {
           </div>
           <div>
               <a onClick={() => parallax.current.scrollTo(1)}>About</a>
-              <a onClick={() => parallax.current.scrollTo(1.9)}>Products</a>
-              <a onClick={() => parallax.current.scrollTo(3)}>Contact</a>
+              <a onClick={() => parallax.current.scrollTo(2.9)}>Products</a>
+              <a onClick={() => parallax.current.scrollTo(4)}>Contact</a>
           </div>
           <div className="removeUnderline">
           <a href="/support" style={{textDecoration: "none"}}>Support</a>
@@ -59,11 +60,11 @@ export default function Home() {
         </nav>
       </header>
       </div>
-      <Parallax pages={4} ref={parallax}>
+      <Parallax pages={5} ref={parallax}>
       <ParallaxLayer speed={0.075} offset={0}>
         <Image src={Stars} alt="backStars" className="backgroundimgStars"/>
       </ParallaxLayer>
-      <ParallaxLayer speed={0.25} offset={3}>
+      <ParallaxLayer speed={0.25} offset={4}>
         <div>
           <Image src={Back} alt="backdrop" className="backgroundimg"/>
           <Image src={Floor} alt="backFloor" className="backgroundimg"/>
@@ -77,9 +78,12 @@ export default function Home() {
           <About />
       </ParallaxLayer>
       <ParallaxLayer speed={0.175} offset={2}>
+          <Infocards />
+      </ParallaxLayer>
+      <ParallaxLayer speed={0.175} offset={3}>
           <Products />
       </ParallaxLayer>
-      <ParallaxLayer speed={0.25} offset={3}>
+      <ParallaxLayer speed={0.25} offset={4}>
           <Contactform />
       </ParallaxLayer>
       </Parallax>
