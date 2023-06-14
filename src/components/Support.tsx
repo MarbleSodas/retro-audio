@@ -9,7 +9,7 @@ function Support() {
                 <h1>
                     Support
                 </h1>
-                <p>
+                <p className={styles.paragraphLucidity}>
                   How to operate your Retro Audio Guestbook!
                 </p>
             </div>

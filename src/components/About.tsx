@@ -1,5 +1,11 @@
 import React from 'react'
 import styles from '../styles/About.module.css';
+import { Quicksand } from 'next/font/google';
+
+export const text = Quicksand({
+  subsets: ['latin-ext'],
+  weight: ['600'],
+})
 
 function About() {
   return (
@@ -9,7 +15,7 @@ function About() {
                 <h1>
                     Our Story
                 </h1>
-                <p>
+                <p className={text.className}>
                   A couple of weeks before our wedding, my wife and I were scrolling through looking for guestbooks.
                   We wanted something unique but not pieces of wood we would put in a plastic display. During our search we found out about audio guestbooks.
                   We knew we had to have one but our wedding, but we couldn't find any that would ship in time.
