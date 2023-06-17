@@ -11,8 +11,8 @@ import Testing from '@/components/Testing';
 import Record from '@/components/Record';
 import Link from 'next/link';
 
-export default function support() {
-    const parallax = useRef<IParallax>(null!);
+export default function SupportPage() {
+    const useParallax = useRef<IParallax>(null!);
     return (
       <>
         <div className="mobileHeader">
@@ -37,7 +37,7 @@ export default function support() {
           </nav>
         </header>
         </div>
-        <Parallax pages={6} ref={parallax}>
+        <Parallax pages={6} ref={useParallax}>
             <ParallaxLayer speed={0.015} offset={0}>
                 <Image src={Stars} alt="backStars" className="backgroundimgStarsSupport"/>
             </ParallaxLayer>
