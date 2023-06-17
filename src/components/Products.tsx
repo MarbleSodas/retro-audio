@@ -10,7 +10,6 @@ function Products() {
     //products list
     const list = [
         {
-            key: 1,
             title: "Neo Noir",
             img: "mooLcYde-1L7Iye6y-ZbeiOr6-bJubn_C1U15kYnHHNQ5ziuXMo5aBeOty_tKF8pSyiWA87t5mvCfiAQeOjXWevbYFw81YgoO8kn_8YoBsyxUOjpy4bdqHdEh7ijSTL-n6oXISYL=w2400",
             price: "$120",
@@ -54,6 +53,7 @@ function Products() {
         </Grid.Container>
         {list.map((item, index) => (
         <Modal
+            key={index}
             scroll
             width="900px"
             aria-labelledby={item.title}

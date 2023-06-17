@@ -36,7 +36,7 @@ export default function Home() {
                 <li> <a onClick={() => parallax.current.scrollTo(1)}>About</a> </li>
                 <li> <a onClick={() => parallax.current.scrollTo(1.9)}>Products</a> </li>
                 <li> <a onClick={() => parallax.current.scrollTo(3)}>Contact</a> </li>
-                <li> <a href="/support" style={{textDecoration: "none"}}>Support</a> </li>
+                <li> <Link href="/support" style={{textDecoration: "none"}}>Support</Link> </li>
               </ul>
               </label>
             </div>
