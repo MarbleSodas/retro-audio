@@ -56,7 +56,7 @@ export default function Home() {
               <a onClick={() => parallax.current.scrollTo(4)}>Contact</a>
           </div>
           <div className="removeUnderline">
-          <Link href="/support" style={{textDecoration: "none"}}>Support</Link>
+          <Link href="/SupportPage" style={{textDecoration: "none"}}>Support</Link>
           </div>
         </nav>
       </header>
