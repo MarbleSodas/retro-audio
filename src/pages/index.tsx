@@ -13,6 +13,7 @@ import { useRef } from "react";
 import React from 'react';
 import styles from '../styles/Header.module.css';
 import Logo from '../components/images/Retro Audio.svg';
+import Link from 'next/link';
 
 export default function Home() {
   const parallax = useRef<IParallax>(null!);
@@ -55,7 +56,7 @@ export default function Home() {
               <a onClick={() => parallax.current.scrollTo(4)}>Contact</a>
           </div>
           <div className="removeUnderline">
-          <a href="/support" style={{textDecoration: "none"}}>Support</a>
+          <Link href="/support" style={{textDecoration: "none"}}>Support</Link>
           </div>
         </nav>
       </header>
