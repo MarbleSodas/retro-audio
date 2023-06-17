@@ -9,6 +9,7 @@ import Contactform from '@/components/Contactform';
 import OnandOff from '@/components/OnandOff';
 import Testing from '@/components/Testing';
 import Record from '@/components/Record';
+import Link from 'next/link';
 
 export default function support() {
     const parallax = useRef<IParallax>(null!);
@@ -18,10 +19,10 @@ export default function support() {
           <header className={styles.header}>
             <nav className={styles.nav}>
               <div className={styles.align}>
-                <a href='/'><Image src={Logo} alt="Logo" className={styles.logo}/></a>
+                <Link href='/'><Image src={Logo} alt="Logo" className={styles.logo}/></Link>
               </div>
               <div>
-                <a href='/'>Retro Audio</a>
+                <Link href='/'>Retro Audio</Link>
               </div>
             </nav>
           </header>
@@ -30,8 +31,8 @@ export default function support() {
           <header className={styles.header}>
           <nav className={styles.nav}>
             <div className={styles.align}>
-            <a href='/'><Image src={Logo} alt="Logo" className={styles.logo}/></a>
-            <a href='/' style={{textDecoration: "none"}}>Retro Audio</a>
+            <Link href='/'><Image src={Logo} alt="Logo" className={styles.logo}/></Link>
+            <Link href='/' style={{textDecoration: "none"}}>Retro Audio</Link>
             </div>
           </nav>
         </header>
