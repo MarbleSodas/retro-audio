@@ -12,7 +12,7 @@ import Stars from "@/components/images/stars.png";
 import { useRef } from "react";
 import React from 'react';
 import styles from '../styles/Header.module.css';
-import Logo from '../components/images/Retro Audio.svg';
+import Logo from '../components/images/LogoFavicon.svg';
 import Link from 'next/link';
 
 export default function Home() {

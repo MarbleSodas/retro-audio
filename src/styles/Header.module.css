@@ -44,6 +44,8 @@
     display: flex;
     width: auto;
     height: 4vw;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
   }
 
   /* mobile view */
