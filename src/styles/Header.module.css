@@ -43,9 +43,9 @@
   .logo {
     display: flex;
     width: auto;
-    height: 4vw;
-    padding-top: 0.2vh;
-    padding-bottom: 0.2vh;
+    height: 3.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
   }
 
   /* mobile view */
@@ -54,7 +54,7 @@
   .logo {
     display: flex;
     width: auto;
-    height: 15vw;
+    height: 10vw;
   }
 
   .nav a {

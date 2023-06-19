@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Phone from './images/PhoneTransparent.png';
 import moon from './images/moon.png';
+import { motion } from "framer-motion";
 
 function Hero() {
 

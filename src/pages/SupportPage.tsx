@@ -1,5 +1,5 @@
 import styles from '../styles/Header.module.css';
-import Logo from '../components/images/LogoFavicon.svg';
+import Logo from '../components/images/Logo.svg';
 import Image from 'next/image';
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from "react";
