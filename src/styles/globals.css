@@ -354,10 +354,19 @@ body::-webkit-scrollbar {
     display: block;
     text-align: center;
   }
+
   .regularHeader h1 {
     font-family: var(--fontLucidity);
     font-size: clamp(5rem, 8vw, 6rem);
     color: var(--primaryTextColor);
     text-align: center;
+  }
+
+  .regularHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 }

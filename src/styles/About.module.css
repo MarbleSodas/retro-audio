@@ -99,7 +99,7 @@
     .header p {
         font-size: clamp(1.6rem, 2.25vw, 4.5rem);
         color: var(--primaryTextColor);
-        width: 70vw;
+        width: 80vw;
         height: auto;
         text-align: center;
     }
