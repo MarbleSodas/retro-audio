@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/About.module.css';
 import Image from 'next/image';
 import { Quicksand } from 'next/font/google';
+import { motion } from 'framer-motion';
 
 export const text = Quicksand({
   subsets: ['latin-ext'],
@@ -11,6 +12,10 @@ export const text = Quicksand({
 function Record() {
   return (
     <div>
+      <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { duration: 0.75 }}}
+      >
         <header className={styles.header}>
             <div className={styles.container}>
                 <h2>
@@ -24,6 +29,7 @@ function Record() {
                 </p>
             </div>
         </header>
+      </motion.div>
     </div>
   )
 }

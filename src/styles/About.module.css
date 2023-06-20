@@ -9,14 +9,14 @@
 
 .aboutHeader h1 {
     font-family: var(--fontLucidity);
-    font-size: clamp(4.5rem, 8vw, 6rem);
+    font-size: clamp(4.5rem, 8vw, 10rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
     text-align: center;
   }
 
 .aboutHeader p {
-    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    font-size: clamp(2rem, 2vw, 4.5rem);
     color: var(--primaryTextColor);
     width: 70vw;
     height: auto;
@@ -65,10 +65,8 @@
 }
 
 .header a {
-    font-family: var(--fontLucidity);
-    font-size: clamp(2rem, 2.25vw, 4.5rem);
+    font-size: clamp(1.75rem, 2.25vw, 4.5rem);
     color: var(--primaryTextColor);
-    width: 70vw;
     height: auto;
     text-align: center;
     padding-bottom: 5px;
@@ -84,10 +82,24 @@
 }
 
 @media (max-width: 768px) {
+    .aboutHeader h1 {
+        font-family: var(--fontLucidity);
+        font-size: clamp(4.5rem, 8vw, 6rem);
+        color: var(--primaryTextColor);
+        padding-bottom: 50px;
+        text-align: center;
+      }
     .aboutHeader p {
         font-size: clamp(1.6rem, 1.5vw, 3rem);
         color: var(--primaryTextColor);
         width: 80vw;
+        height: auto;
+        text-align: center;
+    }
+    .header p {
+        font-size: clamp(1.6rem, 2.25vw, 4.5rem);
+        color: var(--primaryTextColor);
+        width: 70vw;
         height: auto;
         text-align: center;
     }

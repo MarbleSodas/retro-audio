@@ -17,8 +17,7 @@
   }
 
   .contactForm p {
-    font-family: var(--fontLucidity);
-    font-size: clamp(2rem, 1.5vw, 4rem);
+    font-size: clamp(1.25rem, 1.5vw, 4rem);
     color: var(--primaryTextColor);
     width: 70vw;
     height: auto;
@@ -26,8 +25,7 @@
   }
   
   .contactForm a {
-    font-family: var(--fontLucidity);
-    font-size: clamp(1.5rem, 1.5vw, 4rem);
+    font-size: clamp(1.25rem, 1.5vw, 4rem);
     color: var(--primaryTextColor);
     width: 70vw;
     height: auto;

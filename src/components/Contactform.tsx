@@ -1,6 +1,14 @@
 import React from 'react';
 import styles from '../styles/Contact.module.css';
 import { useForm, ValidationError } from '@formspree/react';
+import { Quicksand } from 'next/font/google';
+import { motion } from 'framer-motion';
+
+export const text = Quicksand({
+  subsets: ['latin-ext'],
+  weight: ['600'],
+})
+
 function Contactform() {
   const [state, handleSubmit] = useForm("xoqzzpgj");
   if (state.succeeded) {
@@ -13,16 +21,20 @@ function Contactform() {
   }
   return (
     <div className={styles.flexContainer}>
+      <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { duration: 0.5 }}}
+                >
       <form onSubmit={handleSubmit} className={styles.contactForm}>
         <header className='regularHeader'>
           <h1>
             Contact
           </h1>
         </header>
-        <p>For faster responses, contact us at: </p>
-        <a href='mailto: marblesodaprojects@gmail.com'>marblesodaprojects@gmail.com</a>
-        <p>or text us at: </p>
-        <a href='tel: 1-909-278-7715'>909-278-7715</a>
+        <p className={text.className}>For faster responses, contact us at: </p>
+        <a href='mailto: marblesodaprojects@gmail.com' className={text.className}>marblesodaprojects@gmail.com</a>
+        <p className={text.className}>or text us at: </p>
+        <a href='tel: 1-909-278-7715' className={text.className}>909-278-7715</a>
         <input
           className={styles.input}
           id="email"
@@ -51,6 +63,7 @@ function Contactform() {
           Submit
         </button>
       </form>
+      </motion.div>
     </div>
   );
 }

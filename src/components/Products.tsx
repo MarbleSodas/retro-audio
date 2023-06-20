@@ -5,6 +5,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import { motion } from 'framer-motion';
 
 function Products() {
     //products list
@@ -21,10 +22,19 @@ function Products() {
   return (
     <div className='center'>
         <header className={styles.header}>
-            <h1 className={styles.title}>
-                Products
-            </h1>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+              >
+                <h1 className={styles.title}>
+                    Products
+                </h1>
+            </motion.div>
         </header>
+        <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+        >
         <Grid.Container gap={2} justify="center">
         {list.map((item, index) => (
             <Grid className={styles.cardGrid} key={index}>
@@ -51,6 +61,7 @@ function Products() {
             </Grid>
         ))}
         </Grid.Container>
+        </motion.div>
         {list.map((item, index) => (
         <Modal
             key={index}

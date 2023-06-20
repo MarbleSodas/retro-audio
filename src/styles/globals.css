@@ -142,9 +142,8 @@ body::-webkit-scrollbar {
 
 .regularHeader h1 {
   font-family: var(--fontLucidity);
-  font-size: clamp(5rem, 8vw, 6rem);
+  font-size: clamp(5rem, 8vw, 10rem);
   color: var(--primaryTextColor);
-  padding-bottom: 75px;
   text-align: center;
 }
 
@@ -182,6 +181,14 @@ body::-webkit-scrollbar {
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
+}
+
+.backgroundimgStarsSupport {
+  width: auto;
+  height: 500vh;
+  position: fixed;
+  top: 0;
+  z-index: -2;
 }
 
 /* mobile view */
@@ -229,14 +236,6 @@ body::-webkit-scrollbar {
     z-index: -2;
   }
   
-  .backgroundimgStarsSupport {
-    width: auto;
-    height: 600vh;
-    position: fixed;
-    top: 0;
-    z-index: -2;
-  }
-
   .phone {
     justify-self: center;
     align-self: center;
@@ -353,6 +352,12 @@ body::-webkit-scrollbar {
   label a {
     margin-bottom: 1em;
     display: block;
+    text-align: center;
+  }
+  .regularHeader h1 {
+    font-family: var(--fontLucidity);
+    font-size: clamp(5rem, 8vw, 6rem);
+    color: var(--primaryTextColor);
     text-align: center;
   }
 }

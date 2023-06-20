@@ -9,7 +9,7 @@
 .title {
     font-family: "Lucidity", "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-size: clamp(5rem, 8vw, 6rem);
+    font-size: clamp(5rem, 8vw, 10rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
     text-align: center;
@@ -47,10 +47,19 @@
 
 .cardGrid {
     width: 35vw;
+    max-width: 700px;
 }
 
 @media (max-width: 768px) {
     .cardGrid {
         width: 60vw;
+    }
+    .title {
+        font-family: "Lucidity", "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: clamp(5rem, 8vw, 6rem);
+        color: var(--primaryTextColor);
+        padding-bottom: 50px;
+        text-align: center;
     }
   }

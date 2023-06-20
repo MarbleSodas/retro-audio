@@ -9,6 +9,10 @@ function Hero() {
 
   return (
     <div className="toppage">
+      <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+      >
       <header className="hero__header">
           <h1>Something 
             <Typewriter
@@ -21,10 +25,16 @@ function Hero() {
               />
           </h1>
       </header>
-      <div className="cover">
-        <Image alt="phone" src={Phone} className="phone"/>
-        <Image alt='moon' src={moon} className="circle"/>
-      </div>
+      </motion.div>
+      <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+      >
+        <div className="cover">
+          <Image alt="phone" src={Phone} className="phone"/>
+          <Image alt='moon' src={moon} className="circle"/>
+        </div>
+      </motion.div>
     </div>
   );
 }

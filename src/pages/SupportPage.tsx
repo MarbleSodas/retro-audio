@@ -37,7 +37,7 @@ export default function SupportPage() {
           </nav>
         </header>
         </div>
-        <Parallax pages={6} ref={useParallax}>
+        <Parallax pages={5} ref={useParallax}>
             <ParallaxLayer speed={0.015} offset={0}>
                 <Image src={Stars} alt="backStars" className="backgroundimgStarsSupport"/>
             </ParallaxLayer>
@@ -53,7 +53,7 @@ export default function SupportPage() {
             <ParallaxLayer speed={0.275} offset={3}>
                 <Testing/>
             </ParallaxLayer>
-            <ParallaxLayer speed={0.275} offset={5}>
+            <ParallaxLayer speed={0.275} offset={4}>
                 <Contactform/>
             </ParallaxLayer>
         </Parallax>
