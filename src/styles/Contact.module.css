@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: flex-end;
   min-height: 100vh;
-  max-height: 100vh;
 }
 
 
@@ -92,6 +91,13 @@
       height: 30vw;
       max-inline-size: 1000px;
     }
+    .flexContainer {
+      y: -100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 100vh;
+    }
   }
 
   .submitMessage {
@@ -103,3 +109,4 @@
     padding-bottom: 5vh;
     text-align: center;
   }
+  
