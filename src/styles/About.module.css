@@ -9,7 +9,7 @@
 
 .aboutHeader h1 {
     font-family: var(--fontLucidity);
-    font-size: clamp(5rem, 8vw, 6rem);
+    font-size: clamp(4.5rem, 8vw, 6rem);
     color: var(--primaryTextColor);
     padding-bottom: 50px;
     text-align: center;

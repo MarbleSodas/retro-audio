@@ -330,13 +330,13 @@ body::-webkit-scrollbar {
     
   }
   
-  label input:checked + .menu + ul { opacity: 1; }
+  label input:checked + .menu + ul { opacity: 1; left: 50%;}
   
   label ul {
     z-index: 200;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 200%;
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
     opacity: 0;

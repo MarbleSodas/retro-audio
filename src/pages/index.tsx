@@ -34,8 +34,8 @@ export default function Home() {
               <span className="menu"> <span className="hamburger"></span> </span>
               <ul>
                 <li> <a onClick={() => parallax.current.scrollTo(1)}>About</a> </li>
-                <li> <a onClick={() => parallax.current.scrollTo(1.9)}>Products</a> </li>
-                <li> <a onClick={() => parallax.current.scrollTo(3)}>Contact</a> </li>
+                <li> <a onClick={() => parallax.current.scrollTo(2.9)}>Products</a> </li>
+                <li> <a onClick={() => parallax.current.scrollTo(4)}>Contact</a> </li>
                 <li> <Link href="/SupportPage" style={{textDecoration: "none"}}>Support</Link> </li>
               </ul>
               </label>
