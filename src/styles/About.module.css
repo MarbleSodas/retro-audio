@@ -16,7 +16,7 @@
   }
 
 .aboutHeader p {
-    font-size: clamp(2rem, 2vw, 4.5rem);
+    font-size: clamp(2rem, 2.5vw, 4.5rem);
     color: var(--primaryTextColor);
     width: 70vw;
     height: auto;
@@ -82,3 +82,13 @@
     height: auto;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .aboutHeader p {
+        font-size: clamp(1.6rem, 1.5vw, 3rem);
+        color: var(--primaryTextColor);
+        width: 80vw;
+        height: auto;
+        text-align: center;
+    }
+  }

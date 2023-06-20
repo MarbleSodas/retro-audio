@@ -25,9 +25,9 @@ function Products() {
                 Products
             </h1>
         </header>
-        <Grid.Container gap={2} justify="center">
+        <Grid.Container className={styles.cardGrid} gap={2} justify="center">
         {list.map((item, index) => (
-            <Grid sm={3.5} key={index} className={styles.cardGrid}>
+            <Grid xs={4} key={index}>
                 <Card isPressable isHoverable onPress={() => setVisible(true)}>
                     <Card.Body css={{p: 0}}>
                     <Card.Image

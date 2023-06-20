@@ -79,7 +79,7 @@
       margin-bottom: 1rem;
       font-size: 18px;
       width: 75vw;
-      height: 50vw;
+      height: 30vw;
       max-inline-size: 1000px;
     }
   }
@@ -90,6 +90,6 @@
     color: var(--primaryTextColor);
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 50px;
+    padding-bottom: 5vh;
     text-align: center;
   }

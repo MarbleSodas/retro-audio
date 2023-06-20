@@ -48,3 +48,9 @@
 .cardGrid {
     height: 30vw;
 }
+
+@media (max-width: 768px) {
+    .cardGrid {
+        width: 75vw;
+    }
+  }
