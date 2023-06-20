@@ -19,7 +19,7 @@ function Products() {
     //variables for modal visibility
     const { setVisible, bindings } = useModal();
   return (
-    <div>
+    <div className='center'>
         <header className={styles.header}>
             <h1 className={styles.title}>
                 Products
