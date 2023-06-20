@@ -46,11 +46,11 @@
 }
 
 .cardGrid {
-    height: 30vw;
+    width: 35vw;
 }
 
 @media (max-width: 768px) {
     .cardGrid {
-        width: 75vw;
+        width: 60vw;
     }
   }

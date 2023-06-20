@@ -29,16 +29,16 @@ export default function Home() {
               <a onClick={() => parallax.current.scrollTo(0)}>Retro Audio</a>
             </div>
             <div>
-            <label>
-              <input type="checkbox"/>
-              <span className="menu"> <span className="hamburger"></span> </span>
-              <ul>
-                <li> <a onClick={() => parallax.current.scrollTo(1)}>About</a> </li>
-                <li> <a onClick={() => parallax.current.scrollTo(2.9)}>Products</a> </li>
-                <li> <a onClick={() => parallax.current.scrollTo(4)}>Contact</a> </li>
-                <li> <Link href="/SupportPage" style={{textDecoration: "none"}}>Support</Link> </li>
-              </ul>
-              </label>
+              <label>
+                <input type="checkbox"/>
+                <span className="menu"> <span className="hamburger"></span> </span>
+                <ul>
+                  <li> <a onClick={() => parallax.current.scrollTo(1)}>About</a> </li>
+                  <li> <a onClick={() => parallax.current.scrollTo(2.9)}>Products</a> </li>
+                  <li> <a onClick={() => parallax.current.scrollTo(4)}>Contact</a> </li>
+                  <li> <Link href="/SupportPage" style={{textDecoration: "none"}}>Support</Link> </li>
+                </ul>
+                </label>
             </div>
           </nav>
         </header>
